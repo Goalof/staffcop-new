@@ -25,9 +25,13 @@ const GaButton = ({
 		rest
 	} = useOverrides(props, overrides);
 	const gaPageview = ReactGA.pageview(pageName);
+	const ga = ReactGA.ga();
+
+	const pageview = () => ga('send', 'event', 'preorder');
+
 	return <Box {...rest}>
 		      
-		<Button onClick={gaPageview} {...override('Button')}>
+		<Button onSubmit={pageview} {...override('Button')}>
 			        
 			{override('Button').children || 'Some Text'}
 			      

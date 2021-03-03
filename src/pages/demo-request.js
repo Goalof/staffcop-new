@@ -149,7 +149,11 @@ export default (() => {
 						/>
 						<Components.ButtonForm type="submit" hover-background="#0081ff" />
 					</Formspree>
-					<Components.GaButton />
+					<Components.GaButton>
+						<Override slot="Button">
+							Send
+						</Override>
+					</Components.GaButton>
 					{"    "}
 				</StackItem>
 				<StackItem
