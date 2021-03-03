@@ -76,7 +76,7 @@ export default (() => {
 						sm-font="normal 700 20px/30px Inter, sans-serif"
 						lg-font="normal 700 36px/40px Inter, sans-serif"
 					>
-						Start free trial{"\n\n"}
+						Start free trial
 					</Text>
 					<Formspree
 						errorMessage="Something went wrong"
@@ -148,7 +148,7 @@ export default (() => {
 							hover-border-color="--color-primary"
 						/>
 						<Components.ButtonForm type="submit" hover-background="#0081ff">
-							Send{"\n\n"}
+							Send
 						</Components.ButtonForm>
 					</Formspree>
 					<Components.GaButton>

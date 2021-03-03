@@ -30,13 +30,17 @@ const GaButton = ({
 	const pageview = () => ga('send', 'event', 'preorder');
 
 	return <Box {...rest}>
-		      
+
+      
 		<Button onSubmit={pageview} {...override('Button')}>
-			        
+
+        
 			{override('Button').children || 'Some Text'}
-			      
+
+      
 		</Button>
-		    
+
+    
 	</Box>;
 };
 
