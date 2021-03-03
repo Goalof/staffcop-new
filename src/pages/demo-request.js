@@ -147,9 +147,15 @@ export default (() => {
 							type="tel"
 							hover-border-color="--color-primary"
 						/>
-						<Components.ButtonForm type="submit" hover-background="#0081ff" />
+						<Components.ButtonForm type="submit" hover-background="#0081ff">
+							Send{"\n\n"}
+						</Components.ButtonForm>
 					</Formspree>
-					<Components.GaButton />
+					<Components.GaButton>
+						<Override slot="Button">
+							Sendы
+						</Override>
+					</Components.GaButton>
 					{"    "}
 				</StackItem>
 				<StackItem
